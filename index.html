@@ -3,137 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Banyuwangi</title>
+  <title>Jasa Travel Banyuwangi ke Surabaya & Bali | Travel Banyuwangi</title>
+  <meta name="description" content="Travel Banyuwangi menyediakan layanan travel nyaman dan aman dari Banyuwangi ke Surabaya dan Bali setiap hari. Armada bersih, driver berpengalaman.">
+  <meta property="og:title" content="Travel Banyuwangi ke Surabaya & Bali">
+  <meta property="og:description" content="Jasa travel harian Banyuwangi ke Surabaya & Bali. Armada nyaman, driver berpengalaman.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1694497905206-a23fa36b4536">
+  <meta property="og:url" content="https://travelbanyuwangi.xyz">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
     body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background: #f9f9f9;
       color: #333;
-      overflow-x: hidden;
     }
     header {
       background: #027373;
       color: white;
-      padding: 25px;
+      padding: 20px;
       text-align: center;
-      animation: fadeInDown 1s ease-out;
     }
     .hero {
-  position: relative;
-  overflow: hidden;
-  padding: 120px 20px;
-  text-align: center;
-  color: white;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url('https://images.unsplash.com/photo-1694497905206-a23fa36b4536?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
-  z-index: -1;
-  animation: zoomHero 20s ease-in-out infinite alternate;
-}
-
-@keyframes zoomHero {
-  0%   { transform: scale(1); }
-  100% { transform: scale(1.1); }
-}
-
-.hero h1, .hero p, .hero a {
-  position: relative;
-  z-index: 1;
-}
+      position: relative;
+      overflow: hidden;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1694497905206-a23fa36b4536?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+      z-index: -1;
+      animation: zoomHero 20s ease-in-out infinite alternate;
+    }
+    @keyframes zoomHero {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
     }
     .cta-btn {
       background: #f8b400;
       color: white;
       padding: 15px 30px;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       font-size: 18px;
       text-decoration: none;
-      transition: background 0.3s ease, transform 0.3s ease;
+      transition: background 0.3s ease;
     }
     .cta-btn:hover {
-      background: #f39c12;
-      transform: translateY(-3px);
+      background: #ffa500;
     }
     .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
       background: white;
-      gap: 20px;
     }
     .service {
       flex: 1 1 300px;
-      padding: 25px;
+      margin: 10px;
+      padding: 20px;
       background: #f1f1f1;
-      border-radius: 10px;
+      border-radius: 8px;
       text-align: center;
       transition: transform 0.3s ease, background 0.3s ease;
-      animation: fadeInUp 1s ease forwards;
-      opacity: 0;
-    }
-    .service h2 {
-      margin-bottom: 15px;
-      color: #027373;
-    }
-    .service p {
-      font-size: 16px;
-      line-height: 1.6;
     }
     .service:hover {
       transform: translateY(-5px);
-      background: #eaeaea;
+      background: #e0e0e0;
+    }
+    .service h2 {
+      margin-bottom: 10px;
+      color: #027373;
     }
     footer {
       background: #333;
       color: white;
       text-align: center;
-      padding: 25px;
-      font-size: 14px;
+      padding: 20px;
     }
     footer a {
       color: #f8b400;
       text-decoration: none;
     }
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    .service:nth-child(1) { animation-delay: 0.5s; }
-    .service:nth-child(2) { animation-delay: 0.7s; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 32px; }
-      .hero p { font-size: 18px; }
-      .cta-btn { padding: 12px 24px; font-size: 16px; }
-    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Travel Banyuwangi</h1>
   </header>
@@ -159,5 +131,6 @@
     <p>Hubungi kami via <a href="https://wa.me/6282132704490" target="_blank">WhatsApp: +62 821-3270-4490</a></p>
     <p>&copy; 2025 Travel Banyuwangi. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
